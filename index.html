@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./styles.css">
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Mandali|Montserrat+Subrayada:400,700" rel="stylesheet"><body>
+    <header>
+
+
+        <div id="header">
+            <div id="identity">
+                        <div id="hero"></div>
+                        <div class="heroContainer">
+                          <h1 id="title">Ahumada<strong>Realty</strong><small>.com</small><br>
+                            <small class="digits">508.244.8299</small>
+                          </h1>
+
+                        </div>
+                <div class="clear"></div>
+            </div>
+            <div id="portrait" ng-hide="'home' | isState">
+              <img src="media/john.jpg" alt="">
+            </div>
+            <div id="nav">
+              <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Listings</li>
+              </ul>
+            </div>
+
+
+        </div>
+    </header>
+
+    <br>
+
+    <ui-view></ui-view>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ctrl.js" charset="utf-8"></script>
+</body>
+
+</html>

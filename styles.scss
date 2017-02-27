@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+}
+header {
+  position: relative;
+  height: 400px;
+}
+#identity {
+    height: 400px;
+    width: 100vw;
+}
+
+#hero {
+  height: 400px;
+  width: 100vw;
+  // -webkit-filter: contrast(2);
+  // filter: contrast(2);
+  // -webkit-filter: grayscale(0.4);
+  // filter: grayscale(0.4);
+  filter: hue-rotate(-30deg);
+  background-image: url("http://static1.squarespace.com/static/530cf732e4b0863b8e5b323f/53cdde69e4b000ade3628ae0/53e2e2f5e4b0fb49e523feb7/1407378925463/?format=1000w");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.heroContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 295px;
+  #title {
+    position: absolute;
+    top: 30%;
+    right: 3%;
+    color: white;
+    font-size: 5vw;
+    line-height: 55px;
+    // text-shadow: -1px 0 #999999,0 1px #999999,1px 0 #999999,0 -1px #999999;
+    // font-family: 'IM Fell French Canon SC', serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-align: right;
+    strong {
+      color: #4F3458;
+      font-size: 6vw;
+    }
+  .digits {
+    font-family: 'Mandali', sans-serif;
+    color: lightgrey;
+    font-size: 4vw;
+    margin: 0;
+    text-shadow: none;
+  }
+  }
+}
+
+#portrait {
+  position: absolute;
+  left: 6%;
+  top: 20%;
+  z-index: 20;
+  width: 18%;
+  border: 10px solid white;
+  box-shadow: 0px 0px 0px 10px #eee;
+  margin-bottom: 50px;
+  img {
+    width: 100%;
+  }
+}
+.johnLarge {
+  position: absolute;
+  left: 6%;
+  top: 20%;
+  z-index: 21;
+  width: 23%;
+  min-height: 200px;
+  height: auto;
+  border: 10px solid white;
+  box-shadow: 0px 0px 0px 10px #eee;
+  margin-bottom: 50px;
+  img {
+    width: 100%;
+  }
+}
+
+#nav {
+  line-height: 100%;
+  color: white;
+  padding-left: 31%;
+  position: absolute;
+  bottom: 0;
+  width: 74%;
+  background-color: lightgrey;
+  font-family: 'Mandali', sans-serif;
+  border-bottom: 10px inset;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+  }
+  li {
+    display: inline;
+    padding: 10px 0 10px;
+    width: 33%;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      background-color: #B6622C;
+    }
+  }
+}
+.bio {
+  margin-left: 35%;
+}
