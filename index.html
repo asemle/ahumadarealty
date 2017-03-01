@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="./styles.css">
-<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Mandali|Montserrat+Subrayada:400,700" rel="stylesheet"><body>
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Mandali|Montserrat+Subrayada:400,700" rel="stylesheet">
+<body ng-controller="ctrl">
     <header>
 
 
@@ -25,8 +26,8 @@
             </div>
             <div id="nav">
               <ul>
-                <li>Home</li>
-                <li>Contact</li>
+                <li ui-sref="home">Home</li>
+                <li ng-click="gotoElement('contact')">Contact</li>
                 <li>Listings</li>
               </ul>
             </div>
@@ -36,7 +37,7 @@
     </header>
     <ui-view></ui-view>
 
-    <div class="contact">
+    <div id="contact">
       <h2>Contact</h2>
       <form id="form" class="topBefore">
         <input id="name" type="text" placeholder="NAME">

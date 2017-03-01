@@ -32,7 +32,7 @@ app.post('/contact', function (req, res) {
    //Mail options
    mailOpts = {
        from: req.body.email, //grab form data from the request body object
-       to: process.env.user,
+       to: 	"jahumada1@babson.edu",
        subject: req.body.name + " contacted you from asemle portfolio",
        html:'<p>'+ req.body.message + '</p> <br>' + '<b>' + req.body.email + '</b> <br> <b>' + req.body.phone + '</b>',
    };

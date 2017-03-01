@@ -56,12 +56,12 @@ input:hover::placeholder, textarea:hover::placeholder {
 input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1; }
 
-.contact {
+#contact {
   font-family: 'Lato', sans-serif;
   background: lightgrey;
   color: white;
   padding: 10px 0 10px 0; }
-  .contact h2 {
+  #contact h2 {
     position: relative;
     margin: 40px 0 25px 0;
     font-size: 2.3em;
