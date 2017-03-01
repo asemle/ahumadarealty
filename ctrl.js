@@ -1,9 +1,8 @@
 angular.module("app")
-.controller("ctrl", function($state) {
+.controller("ctrl", function($state, $scope) {
 
-  // console.log($state)
-  // if($state.current.name === "home") {
-  //
-  // }
-
+// var johnlength = angular.element(document.querySelector(".johnLarge"))[0].offsetTop + angular.element(document.querySelector(".johnLarge"))[0].offsetHeight - 400;
+// console.log(johnlength)
+//
+//     $scope.johnlength = "{'height':'"+ johnlength +"px'}"
 })
