@@ -67,7 +67,7 @@ var pics = ["media/Terra Mar/Front Exterior.jpg", "media/Terra Mar/pic 3.jpg", "
 
     };
     pics.forEach(function(pic, index, arr) {
-        var html = "<div class='cell'><a ui-sref='listings'><img alt='Search The MLS' src='"+ pic +"'><div class='hoverInfo'><h4>1711 West Terra Mar Drive, Pompano Fl</h4><h5>4 bed, 2.0 bath, 1911 sqft</h5></div></a></div>";
+        var html = "<div class='cell' ui-sref='listings'><a ui-sref='listings'><img ui-sref='listings' alt='image' src='"+ pic +"'><div class='hoverInfo'><h4>1711 West Terra Mar Drive, Pompano Fl</h4><h5>4 bed, 2.0 bath, 1911 sqft</h5></div></a></div>";
         $(html).appendTo("#subheader")
       })
 
@@ -75,10 +75,21 @@ var pics = ["media/Terra Mar/Front Exterior.jpg", "media/Terra Mar/pic 3.jpg", "
                 cellSelector: '.cell',
                 cellAlign: 'left',
                 contain: true,
-                // wrapAround: true,
+                wrapAround: true,
+                // draggable: false,
                 // setGallerySize: false,
                 pageDots: false,
-                // prevNextButtons: false
               })
+              $('#subheader').on( 'staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
+                if ( cellElement ) {
+                  $('#subheader').flickity({
+                    draggable: false, // not working
+                    pageDots: false, // not working
+                    prevNextButtons: false //not working
+                  });
+                  $state.go('listings');
+                }
+
+              });
 
 });
