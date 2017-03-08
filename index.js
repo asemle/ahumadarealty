@@ -3,7 +3,6 @@ var nodeMailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var bodyParser = require('body-parser');
 
-
 var port = process.env.PORT || 3000;
 
 var app = express();
@@ -13,6 +12,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+
 
 
 app.post('/contact', function (req, res) {
@@ -48,6 +49,8 @@ app.post('/contact', function (req, res) {
        //Yay!! Email sent
    });
  });
+
+
 
 module.exports = app;
 app.listen(port, function() {

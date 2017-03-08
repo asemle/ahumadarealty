@@ -55,7 +55,7 @@ angular.module("app")
 
 angular.module("app")
 .controller('ctrl', function($scope, $state, $location, anchorSmoothScroll) {
-
+var pics = ["media/Terra Mar/Front Exterior.jpg", "media/Terra Mar/pic 3.jpg", "media/Terra Mar/pic 4.jpg", "media/Terra Mar/pic 5.jpg", "media/Terra Mar/pic 10.jpg", "media/Terra Mar/pic 11.jpg", "media/Terra Mar/Screen Shot 2016-11-04 at 2.00.13 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.00.26 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.00.42 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.06 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.19 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.32 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.42 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.53 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.08 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.20 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.38 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.49 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.59 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.03.13 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.05.13 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.05.52 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.06.28 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.06.47 AM.png"]
     $scope.gotoElement = function (eID){
       console.log("fff")
       // set the location.hash to the id of
@@ -66,4 +66,19 @@ angular.module("app")
       anchorSmoothScroll.scrollTo(eID);
 
     };
+    pics.forEach(function(pic, index, arr) {
+        var html = "<div class='cell'><a ui-sref='listings'><img alt='Search The MLS' src='"+ pic +"'><div class='hoverInfo'><h4>1711 West Terra Mar Drive, Pompano Fl</h4><h5>4 bed, 2.0 bath, 1911 sqft</h5></div></a></div>";
+        $(html).appendTo("#subheader")
+      })
+
+        $('#subheader').flickity({
+                cellSelector: '.cell',
+                cellAlign: 'left',
+                contain: true,
+                // wrapAround: true,
+                // setGallerySize: false,
+                pageDots: false,
+                // prevNextButtons: false
+              })
+
 });
