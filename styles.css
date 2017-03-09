@@ -156,6 +156,7 @@ header {
     color: white;
     font-size: 5vw;
     line-height: 55px;
+    cursor: pointer;
     font-family: 'Montserrat Subrayada', sans-serif;
     text-align: right; }
     .heroContainer #title strong {
@@ -163,7 +164,6 @@ header {
       font-size: 6vw; }
     .heroContainer #title .digits {
       font-family: 'Mandali', sans-serif;
-      color: lightgrey;
       font-size: 4vw;
       margin: 0;
       text-shadow: none; }
@@ -327,23 +327,43 @@ footer .social-buttons {
 @media (min-width: 1280px) {
   .johnLarge {
     width: 280px;
-    top: 70px; } }
+    top: 70px; }
+
+  #nav {
+    padding-left: 30%;
+    width: 70%; } }
 @media (max-width: 1279px) {
   .johnLarge {
     width: 265px;
-    top: 75px; } }
+    top: 75px; }
+
+  #nav {
+    padding-left: 29%;
+    width: 71%; } }
 @media (max-width: 1080px) {
   .johnLarge {
     width: 250px;
-    top: 80px; } }
+    top: 80px; }
+
+  #nav {
+    padding-left: 32%;
+    width: 68%; } }
 @media (max-width: 1036px) {
   .johnLarge {
     width: 200px;
-    top: 150px; } }
+    top: 150px; }
+
+  #nav {
+    padding-left: 28%;
+    width: 72%; } }
 @media (max-width: 800px) {
   .johnLarge {
     width: 200px;
     top: 150px; }
+
+  #nav {
+    padding-left: 34%;
+    width: 66%; }
 
   .heroContainer #title {
     font-size: 4vw;
