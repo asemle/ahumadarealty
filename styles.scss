@@ -190,6 +190,37 @@ header {
 }
 
 
+.proWrap {
+    padding: 25px 25px 0 25px;
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+.gGrid2 {
+    margin: 0;
+    padding: 0;
+    margin-left: -25px;
+    list-style: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+      .gridItem {
+      box-sizing: border-box;
+      display: inline-block;
+      // float: left;
+      min-height: 1px;
+      padding-left: 25px;
+      vertical-align: top;
+      width: 25%;
+      img {
+      max-height: 126px; 
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}
 
 
 footer {

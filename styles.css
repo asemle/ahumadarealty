@@ -276,6 +276,33 @@ header {
     .cell:hover .hoverInfo {
       display: block; }
 
+.proWrap {
+  padding: 25px 25px 0 25px; }
+  .proWrap:after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.gGrid2 {
+  margin: 0;
+  padding: 0;
+  margin-left: -25px;
+  list-style: none;
+  white-space: nowrap;
+  overflow-x: scroll; }
+  .gGrid2 .gridItem {
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 1px;
+    padding-left: 25px;
+    vertical-align: top;
+    width: 25%; }
+    .gGrid2 .gridItem img {
+      max-height: 126px;
+      width: 100%;
+      display: block;
+      margin-bottom: 20px; }
+
 footer .social-buttons {
   margin-top: 0;
   margin-bottom: 0;

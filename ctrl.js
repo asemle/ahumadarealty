@@ -68,7 +68,7 @@ var pics = ["media/Terra Mar/Front Exterior.jpg", "media/Terra Mar/pic 3.jpg", "
     };
     pics.forEach(function(pic, index, arr) {
         var html = "<div class='cell' ui-sref='listings'><a ui-sref='listings'><img ui-sref='listings' alt='image' src='"+ pic +"'><div class='hoverInfo'><h4>1711 West Terra Mar Drive, Pompano Fl</h4><h5>4 bed, 2.0 bath, 1911 sqft</h5></div></a></div>";
-        $(html).appendTo("#subheader")
+        $(html).appendTo("#subheader");
       })
 
         $('#subheader').flickity({
@@ -91,5 +91,25 @@ var pics = ["media/Terra Mar/Front Exterior.jpg", "media/Terra Mar/pic 3.jpg", "
                 }
 
               });
+              pics.forEach(function(pic, index, arr) {
+                  var html = "<div class='gridItem'><a class='fancybox' rel='gallery1' href='" + pic + "'><img src='" + pic + "'alt='pic'></a></div>";
+                  $(html).appendTo(".gGrid2");
+                })
+              $(document).ready(function() {
+
+
+
+
+  $("a.fancybox").fancybox({
+   'transitionIn'	:	'elastic',
+   'transitionOut'	:	'elastic',
+   'speedIn'		:	600,
+   'speedOut'		:	200,
+   'overlayShow'	:	true,
+   'frameWidth' : 497,
+   'padding' : 0,
+   'overlayColor' : '#666'
+ });
+});
 
 });
