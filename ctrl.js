@@ -54,7 +54,7 @@ angular.module("app")
 });
 
 angular.module("app")
-.controller('ctrl', function($scope, $state, $location, anchorSmoothScroll) {
+.controller('ctrl', function($scope, $state, $location, anchorSmoothScroll, $rootScope) {
 var pics = ["media/Terra Mar/Front Exterior.jpg", "media/Terra Mar/pic 3.jpg", "media/Terra Mar/pic 4.jpg", "media/Terra Mar/pic 5.jpg", "media/Terra Mar/pic 10.jpg", "media/Terra Mar/pic 11.jpg", "media/Terra Mar/Screen Shot 2016-11-04 at 2.00.13 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.00.26 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.00.42 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.06 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.19 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.32 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.42 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.01.53 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.08 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.20 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.38 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.49 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.02.59 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.03.13 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.05.13 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.05.52 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.06.28 AM.png", "media/Terra Mar/Screen Shot 2016-11-04 at 2.06.47 AM.png"]
     $scope.gotoElement = function (eID){
       console.log("fff")
@@ -110,6 +110,18 @@ var pics = ["media/Terra Mar/Front Exterior.jpg", "media/Terra Mar/pic 3.jpg", "
    'padding' : 0,
    'overlayColor' : '#666'
  });
+
+ $rootScope.$on('$stateChangeSuccess',
+ function(){
+     if($state.current.name === "listings") {
+       $("#nav").css({
+      "padding-left": "26%",
+      "width": "74%"
+    });
+
+     }
+ })
+
 });
 
 });

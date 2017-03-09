@@ -168,7 +168,7 @@ header {
       margin: 0;
       text-shadow: none; }
 
-small[x-apple-data-detectors].digits {
+a[x-apple-data-detectors].digits {
   color: lightgrey !important;
   text-decoration: none !important; }
 
