@@ -168,6 +168,10 @@ header {
       margin: 0;
       text-shadow: none; }
 
+small[x-apple-data-detectors].digits {
+  color: lightgrey !important;
+  text-decoration: none !important; }
+
 #portrait {
   position: absolute;
   left: 6%;
