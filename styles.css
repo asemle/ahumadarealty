@@ -262,6 +262,7 @@ header {
     white-space: nowrap;
     text-overflow: clip; }
     .cell .hoverInfo h4 {
+      line-height: 20px;
       font-size: 15px;
       color: #4f3458;
       margin: 5px 0 2px 10px; }
