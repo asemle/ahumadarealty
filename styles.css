@@ -185,9 +185,7 @@ header {
   position: absolute;
   display: inline-block;
   left: 6%;
-  bottom: 164px;
   z-index: 21;
-  width: 23%;
   max-width: 280px;
   height: auto;
   border: 10px solid white;
@@ -326,7 +324,27 @@ footer .social-buttons {
         color: white;
         text-decoration: none; }
 
+@media (min-width: 1280px) {
+  .johnLarge {
+    width: 280px;
+    top: 70px; } }
+@media (max-width: 1279px) {
+  .johnLarge {
+    width: 265px;
+    top: 75px; } }
+@media (max-width: 1080px) {
+  .johnLarge {
+    width: 250px;
+    top: 80px; } }
+@media (max-width: 1036px) {
+  .johnLarge {
+    width: 200px;
+    top: 150px; } }
 @media (max-width: 800px) {
+  .johnLarge {
+    width: 200px;
+    top: 150px; }
+
   .heroContainer #title {
     font-size: 4vw;
     text-align: center; } }
