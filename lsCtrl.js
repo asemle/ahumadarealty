@@ -106,20 +106,32 @@ angular.module("app")
 
 
     $scope.pics.forEach(function(pic, index, arr) {
-        var html = "<div class='gridItem'><a class='fancybox' rel='gallery1' href='" + pic + "'><img src='" + pic + "'alt='pic'></a></div>";
+        var html = "<div class='gridItem'><a class='fancybox' data-fancybox='images' href='" + pic + "'><img src='" + pic + "'alt='pic'></a></div>";
         $(html).appendTo(".gGrid2");
     })
     $(document).ready(function() {
 
         $("a.fancybox").fancybox({
-            'transitionIn': 'elastic',
-            'transitionOut': 'elastic',
-            'speedIn': 600,
-            'speedOut': 200,
-            'overlayShow': true,
-            'frameWidth': 497,
-            'padding': 0,
-            'overlayColor': '#666'
+          touch : true,
+          keyboard : true,
+          thumbs: true,
+          slideShow  : true,
+          buttons : true,
+          loop: true
+            // 'transitionIn': 'elastic',
+            // 'transitionOut': 'elastic',
+            // 'speedIn': 600,
+            // 'speedOut': 200,
+            // 'overlayShow': true,
+            // 'frameWidth': 497,
+            // 'showNavArrows': true,
+            // 'padding': 0,
+            // 'overlayColor': '#666',
+            // 'slideShow': true,
+            // 'arrows' : true,
+            // 'loop': true,
+            // 'buttons': true
+
         });
       });
 
