@@ -9,7 +9,7 @@ angular.module("app", ['ui.router'])
     .state('listings', {
       url: '/listings',
       templateUrl: "views/listings.html",
-      controller: 'ctrl'
+      controller: 'lsCtrl'
     })
     $urlRouterProvider
            .otherwise('/');
