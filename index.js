@@ -33,8 +33,9 @@ app.post('/contact', function (req, res) {
    //Mail options
    mailOpts = {
        from: req.body.email, //grab form data from the request body object
-       to: 	"jahumada1@babson.edu",
-       subject: req.body.name + " contacted you from asemle portfolio",
+      //  to: 	"jahumada1@babson.edu",
+       to: process.env.user,
+       subject: req.body.name + " contacted you from ahumadarealty.com",
        html:'<p>'+ req.body.message + '</p> <br>' + '<b>' + req.body.email + '</b> <br> <b>' + req.body.phone + '</b>',
    };
    transporter.sendMail(mailOpts, function (error, response) {

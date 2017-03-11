@@ -89,9 +89,35 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   }
 }
 
+// .form-group {
+//   margin-top: -16px;
+// }
+// #txtarea {
+//   margin-bottom: -14px;
+// }
 
+.text-danger {
+  margin: 0;
+  border-right: solid 1px darkgray;
+  border-left: solid 1px darkgray;
+  background: #b3aca7;
+  ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+}
 
-#form {
+.alert-success {
+  border: 1px solid darkgrey;
+  border-top: 0;
+  text-align: center;
+  padding: 5px;
+  background: #b3aca7;
+}
+
+#contactForm {
   position: relative;
   width: 65%;
   margin: 50px auto;

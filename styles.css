@@ -68,12 +68,30 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     text-align: center;
     letter-spacing: 7px; }
 
-#form {
+.text-danger {
+  margin: 0;
+  border-right: solid 1px darkgray;
+  border-left: solid 1px darkgray;
+  background: #b3aca7; }
+  .text-danger ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    margin: 0; }
+
+.alert-success {
+  border: 1px solid darkgrey;
+  border-top: 0;
+  text-align: center;
+  padding: 5px;
+  background: #b3aca7; }
+
+#contactForm {
   position: relative;
   width: 65%;
   margin: 50px auto;
   box-sizing: border-box; }
-  #form input {
+  #contactForm input {
     font-family: 'Lato', sans-serif;
     font-size: 0.875em;
     width: 100%;
@@ -89,10 +107,10 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out; }
-  #form input:hover {
+  #contactForm input:hover {
     background: #b3aca7;
     color: white; }
-  #form textarea {
+  #contactForm textarea {
     width: 100%;
     height: 110px;
     max-height: 110px;
@@ -108,10 +126,10 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out; }
-  #form textarea:hover {
+  #contactForm textarea:hover {
     background: #b3aca7;
     color: white; }
-  #form #submit {
+  #contactForm #submit {
     margin-top: -5px;
     font-size: 0.875em;
     color: #b3aca7;
@@ -120,7 +138,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
     cursor: pointer;
     border: solid 1px darkgray;
     border-top: none; }
-  #form #submit:hover {
+  #contactForm #submit:hover {
     color: white; }
 
 body {
