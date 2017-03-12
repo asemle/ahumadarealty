@@ -103,10 +103,10 @@ angular.module("app")
 
             $rootScope.$on('$stateChangeSuccess', function() {
                 if ($state.current.name === "listings") {
-                    $("#nav").css({
-                        "padding-left": "26%",
-                        "width": "74%"
-                    });
+                    $("#nav").addClass('listingsNav');
+                }
+                else {
+                  $("#nav").removeClass('listingsNav');
                 }
             })
 

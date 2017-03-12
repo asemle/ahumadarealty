@@ -239,6 +239,10 @@ a[href^=tel] {
       cursor: pointer;
       background-color: #B6622C; }
 
+.listingsNav {
+  padding-left: "26%";
+  width: 74%; }
+
 .spacer {
   width: 35%;
   height: 97px;
